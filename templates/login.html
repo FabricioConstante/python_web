@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN</title>
+    <!-- GETBOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="row container p-4">
+        <div class="col"> </div>
+        <div class="col">
+            <div class="jumbotron">
+                <h1>POR FAVOR INICIE SECIÓN</h1>
+                <br>
+                <form action="" method="post">
+                    <input type="text" placeholder="Username" name="username" value="{{ request.form.username }}">
+                    <input type="password" placeholder="Password" name="password" value="{{ request.form.password }}">
+                    <input class="btn btn-default" type="submit" value="Login">
+                </form>
+                {% if error %}
+                <p class="error"><strong>Error:</strong> {{ error }} </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
