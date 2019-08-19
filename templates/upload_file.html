@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron p-6">
+    <h1 class="display-4">SUBIR DOCUMENTO NUEVO</h1>
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Subir>
+    </form>
+</div>
+
+{% endblock %}

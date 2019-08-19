@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-        featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<div class="jumbotron p-6">
+    <h1 class="display-4">Bienvenido a la matriz de seguimiento</h1>
+    <p class="lead">Revisar el documento subido de excel</p>
+    <hr class="my-4">    <p>rayos no se que más poner jaja</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('upload_file') }}" role="button">Subir Documento</a>
+    <br><br><a class="btn btn-primary btn-lg" href="#" role="button">Seleccionar Documento</a>
+    <br><br><a class="btn btn-primary btn-lg" href="#" role="button">Manual de Usuario</a>
 </div>
 
 {% endblock %}

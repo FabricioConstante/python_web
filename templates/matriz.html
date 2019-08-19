@@ -1,8 +1,11 @@
+
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="jumbotron">
-    <form action="index.py"></form>
+    <a href="{{ url_for('llamar_matriz') }}" target="documento" >documento</a>
+<div>
+    <a></a>
+    <iframe name="documento" width="1100" height="475" frameborder="1"></iframe>
 </div>
 
 {% endblock %}
